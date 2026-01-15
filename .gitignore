@@ -1,13 +1,21 @@
-# Create the .gitignore file with common Python and project-specific ignores
 @'
+# Python
 .venv/
 __pycache__/
-*.pyc
+*.py[cod]
+
+# Environment
 .env
+.python-version
+
+# Data & outputs (generated)
 market_data_binomial.csv
-visualizations/
 *_backtest.csv
-*.png
-*.txt
-*.csv
+visualizations/
+
+# Lockfiles (tool-specific)
+*.lock
+
+# OS
+.DS_Store
 '@ | Out-File -FilePath .gitignore -Encoding utf8
