@@ -198,7 +198,7 @@ def calculate_realized_volatility_cone(prices, windows=[30, 90]):
         rvs['std'] = rv_std
     
     return rvs
-
+# This is the main IV calculation and validation logic
 def validate_market_iv(iv, rv_cone, ewma_vol):
     """
     Institutional-grade IV validation using Realized Volatility Cone.
