@@ -8,4 +8,5 @@ market_data_binomial.csv
 visualizations/
 *_backtest.csv
 *.png
+*.txt
 '@ | Out-File -FilePath .gitignore -Encoding utf8
