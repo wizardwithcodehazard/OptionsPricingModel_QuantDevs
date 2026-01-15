@@ -221,7 +221,8 @@ python q-tool.py
 <div align="center">
 
 ### **Terminal Interface**
-```
+<div align="center">
+<pre>
 ╔════════════════════════════════════════════════════════════════════════════════════╗
 ║                                                                                    ║
 ║  ███████╗██╗   ██╗ █████╗ ███╗   ██╗████████╗ ██████╗ ███████╗██╗   ██╗███████╗    ║
@@ -246,7 +247,8 @@ Available Strikes:
 
 Fair Value: $10.81 | Market: $10.23 | Edge: -5.4%
 Delta: 0.5742 | Gamma: 0.0107 | Vega: 0.23 | Theta: -0.14
-```
+</pre>
+</div>
 
 ### **Visualization Gallery**
 
@@ -256,7 +258,8 @@ Delta: 0.5742 | Gamma: 0.0107 | Vega: 0.23 | Theta: -0.14
 
 
 ### **AI Consultant Output**
-```
+<div align="center">
+<pre>
 🤖 CONSULTING MEMO
 
 Market Pulse: The NVIDIA $185 CALL is trading at $10.23, below our 
@@ -272,7 +275,8 @@ Theta of -0.14 is your daily rent — the option loses 14 paise per day.
 
 MANDATE: BUY the $185 CALL. Hedge with a $180 PUT to create a bull 
 call spread, limiting downside while capturing upside potential.
-```
+</pre>
+</div>
 
 </div>
 
