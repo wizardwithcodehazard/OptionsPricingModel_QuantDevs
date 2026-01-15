@@ -1,28 +1,28 @@
 <div align="center">
 
-# 📊 **QUANT-DEVS**  
+# 📈 **QuantDevs**  
 
-### *Your Institutional-Grade Options Pricing & Risk Analysis Terminal*
+### *Professional Options Pricing & Risk Analysis Engine*
+<img width="1024" height="200" alt="QuantDevs Banner" src="https://github.com/user-attachments/assets/quant-banner-placeholder.png" />
 
-<img width="1024" alt="QuantDevs Banner" src="https://github.com/user-attachments/assets/ascii-banner-placeholder.png" />
+> **Transform options analysis into institutional-grade insights — instantly.**  
+> **Binomial American Pricing • Real-Time Data • AI Consulting • Professional Visualizations**
 
-> **Transform market data into actionable quant strategies — instantly.**  
-> **American Options • Binomial Pricing • AI-Powered • Professional Visualizations**
-
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/quant-devs?style=social)](https://github.com/yourusername/quant-devs/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/quantdevs?style=social)](https://github.com/yourusername/quantdevs/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-![Python](https://img.shields.io/badge/Python-3.8+-3776AB?logo=python&logoColor=white)
-![Groq](https://img.shields.io/badge/Groq-AI_Powered-FF6B6B?logo=ai&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)
+![Groq](https://img.shields.io/badge/AI-Groq_API-orange?logo=ai&logoColor=white)
+
 
 </div>
 
 ---
 
-## 🌟 **The Future of Quant Analysis**
+## 🌟 **The Future of Options Analysis**
 
-**QUANT-DEVS** is a **production-ready options pricing terminal** that combines **institutional-grade models** with **AI-powered insights**. Built for traders, quants, and data scientists who demand precision.
+**QuantDevs** is a **terminal-based quantitative analysis platform** that brings institutional-grade options pricing, Greeks calculation, and AI-powered consulting to your fingertips.
 
-Binomial trees. Realized volatility cones. IV rank signals. All in one CLI.
+No spreadsheets. No manual calculations. Just pure, data-driven decision-making powered by **American Binomial Models**, **EWMA volatility forecasting**, and **LLaMA-3.3-70B AI consulting**.
 
 ---
 
@@ -30,16 +30,14 @@ Binomial trees. Realized volatility cones. IV rank signals. All in one CLI.
 
 | Feature | Magic Behind It |
 |-------|----------------|
-| 🎯 **American Options Pricing** | Cox-Ross-Rubinstein Binomial Model with Numba JIT compilation for speed |
-| 📈 **Advanced Volatility** | Ensemble: Historical Vol + EWMA (λ=0.94) + Realized Vol Cone validation |
-| 🧠 **AI Consultant** | Groq LLaMA 3.3 70B generates institutional-quality trade analysis in articulate Indian English |
-| 📊 **Professional Visualizations** | 3D surfaces, IV smiles, Greeks evolution, Delta-hedged P&L heatmaps |
-| ⚡ **Real-Time Market Data** | yfinance integration with auto-fetching of spot, rates, dividends, options chains |
-| 🔬 **Greeks Engine** | Delta, Gamma, Vega, Theta with finite-difference accuracy |
-| 📉 **Backtesting** | 80/20 train-test split with Sharpe, Sortino, Max Drawdown metrics |
-| 🎨 **IV Rank Signals** | Institutional signal generation: Buy cheap vol, sell expensive vol |
-| ⚖️ **Put-Call Parity Check** | Validate pricing consistency across call/put pairs |
-| 🚀 **Auto-Install Dependencies** | `uv` integration for blazing-fast package installation |
+| 🎯 **American Options Pricing** | Cox-Ross-Rubinstein Binomial Tree with Numba JIT optimization |
+| 📊 **Institutional Backtesting** | 80/20 train-test split with Sharpe, Sortino, and Drawdown metrics |
+| 🧠 **AI Consultant** | Groq LLaMA-3.3-70B explains trades in articulate Indian English |
+| 📈 **IV Rank Signals** | Buy/Sell signals based on 1-year realized volatility percentiles |
+| 🔬 **Real Greeks** | Delta, Gamma, Vega, Theta calculated via finite differences |
+| 🎨 **Desk-Quality Visualizations** | 3D surfaces, IV smiles, P&L heatmaps, Greek evolution charts |
+| ⚖️ **Put-Call Parity** | Automatic arbitrage detection and validation |
+| 🌐 **Live Market Data** | Direct integration with Yahoo Finance for real-time options chains |
 
 ---
 
@@ -47,124 +45,173 @@ Binomial trees. Realized volatility cones. IV rank signals. All in one CLI.
 
 ```mermaid
 graph TB
-    A[CLI Terminal<br/>Rich UI] -->|1. Ticker Input| B[yfinance API<br/>Market Data]
-    B -->|2. OHLCV + Options Chain| C[Volatility Engine]
-    C -->|3. HV + EWMA + RV Cone| D[Binomial Pricing Model<br/>Numba JIT]
-    D -->|4. Fair Value + Greeks| E[Signal Generator<br/>IV Rank Logic]
-    E -->|5. Buy/Sell/Hold| F[Visualization Engine<br/>Matplotlib + Seaborn]
-    D -->|6. Trade Data| G[Groq AI API<br/>LLaMA 3.3 70B]
-    G -->|7. Consulting Memo| A
-    F -->|8. Charts & Surfaces| A
+    A[User Input: Ticker + Strike] --> B(Yahoo Finance API)
+    B --> C{Fetch Market Data}
+    C --> D[Historical Prices]
+    C --> E[Options Chain]
+    C --> F[Risk-Free Rate]
+
+    D --> G[Volatility Engine]
+    G --> H[Historical Vol]
+    G --> I[EWMA Forecast]
+    G --> J[Ensemble Model]
+
+    J --> K[Binomial Pricer]
+    E --> K
+    F --> K
+
+    K --> L[Fair Value + Greeks]
+    L --> M[IV Rank Signal]
+    L --> N[Backtest Module]
+    L --> O[Visualization Suite]
+    L --> P[Groq AI Consultant]
+
+    M --> Q[Terminal Output]
+    N --> Q
+    O --> Q
+    P --> Q
 ```
 
-> **All calculations use institutional-standard methods. No shortcuts.**
+> **All calculations run locally with Numba JIT compilation. AI consulting via Groq API.**
 
 ---
 
 ## 🔬 **Technical Brilliance**
 
-### **1. Institutional Volatility Stack**
-
-```python
-# Multi-method ensemble with validation
-hist_vol = calculate_historical_vol(prices)  # 252-day annualized
-ewma_vol = ewma_volatility(returns, lambda_decay=0.94)  # RiskMetrics standard
-rv_cone = calculate_realized_volatility_cone(prices, windows=[30, 90])
-
-# Validate market IV against RV cone (no arbitrary thresholds)
-validated_iv = validate_market_iv(market_iv, rv_cone, ewma_vol)
-
-# Ensemble for fair value pricing
-ensemble_vol = 0.6 * hist_vol + 0.4 * ewma_vol
-```
-
-→ **Replaces naive single-vol approaches with robust statistical validation**
-
----
-
-### **2. American Options with Numba Speed**
+### **1. American Options Pricing (Numba-Optimized)**
 
 ```python
 @jit(nopython=True)
 def _binomial_price_jit(S, K, T, r, sigma, q, steps, opt_type_int):
-    # Cox-Ross-Rubinstein with early exercise
+    """
+    JIT-compiled binomial pricing for American options.
+    opt_type_int: 1 for CALL, -1 for PUT
+    """
     dt = T / steps
     u = np.exp(sigma * np.sqrt(dt))
     d = 1.0 / u
     p = (np.exp((r - q) * dt) - d) / (u - d)
 
-    # Backward induction with early exercise check
+    # Backward induction with early exercise
     for step in range(steps - 1, -1, -1):
         hold = disc * (p * values[i] + (1 - p) * values[i + 1])
-        exercise = max(0.0, intrinsic_value)
-        values[i] = max(hold, exercise)  # Early exercise
+        exercise = max(0.0, prices[i] - K)  # For calls
+        values[i] = max(hold, exercise)  # American feature
 
     return values[0]
 ```
 
-→ **5-10x faster than pure Python. Production-ready.**
+→ **Handles early exercise optimally in <100ms**
 
 ---
 
-### **3. IV Rank Signal Generation (Institutional Logic)**
+### **2. Institutional Volatility Framework**
 
 ```python
-# Calculate 1-year realized volatility range
-rolling_30d_vol = prices.rolling(30).apply(lambda x: realized_vol(x))
-year_high = rolling_30d_vol.max()
-year_low = rolling_30d_vol.min()
-iv_rank = (current_iv - year_low) / (year_high - year_low) * 100
+# Historical Volatility (252-day annualized)
+hist_vol = returns.std() * np.sqrt(252)
 
-# Signal logic
-if iv_rank < 30:  # Low vol regime
-    signal = "BUY" if model_fair > market_price else "HOLD"
-elif iv_rank > 70:  # High vol regime
-    signal = "SELL" if model_fair < market_price else "HOLD"
-else:  # Mid regime
-    signal = trade_on_mispricing(model_fair, market_price)
+# EWMA Volatility (RiskMetrics λ=0.94)
+def ewma_volatility(returns, lambda_decay=0.94):
+    variance = np.var(returns)
+    for r in returns:
+        variance = lambda_decay * variance + (1 - lambda_decay) * r**2
+    return np.sqrt(variance * 252)
+
+# Ensemble Model (60% Historical, 40% EWMA)
+ensemble_vol = 0.6 * hist_vol + 0.4 * ewma_vol
 ```
-
-→ **Replicates hedge fund vol trading strategies**
 
 ---
 
-## ⚙️ **Setup in 5 Minutes**
+### **3. IV Rank-Based Trading Signals**
+
+```python
+# Calculate 1-year IV Rank (institutional standard)
+rolling_30d_vol = prices.rolling(30).apply(lambda x: realized_vol(x))
+year_vol_high = rolling_30d_vol.max()
+year_vol_low = rolling_30d_vol.min()
+iv_rank = (current_iv - year_vol_low) / (year_vol_high - year_vol_low) * 100
+
+# Signal Logic:
+# IV Rank < 30: LOW VOL → Buy options (cheap premium)
+# IV Rank > 70: HIGH VOL → Sell options (expensive premium)
+# IV Rank 30-70: MID VOL → Trade on model mispricing
+```
+
+---
+
+### **4. AI Consulting Prompt Engineering**
+
+```python
+prompt = f"""
+Act as a Senior Quant Strategist at a top-tier Indian Hedge Fund.
+Explain this {opt_type} option trade to a Portfolio Manager.
+Use professional, articulate Indian English.
+
+DATA:
+- Fair Value: ${fair_value:.2f}
+- Market Price: ${market_price:.2f}
+- Delta: {delta:.4f} | Gamma: {gamma:.6f}
+
+INSTRUCTIONS:
+1. Explain Greeks as real-world forces (Theta = 'daily rent', Vega = 'uncertainty tax')
+2. Provide clear 'Buy/Sell/Hold' mandate with hedging strategy
+3. Keep under 300 words
+"""
+
+response = groq_client.chat.completions.create(
+    model="llama-3.3-70b-versatile",
+    messages=[{"role": "user", "content": prompt}]
+)
+```
+
+---
+
+## ⚙️ **Setup in 3 Steps**
 
 ### **Prerequisites**
 ```bash
 # You need:
 - Python 3.8+
-- GROQ_API_KEY (free at https://console.groq.com)
-- uv (optional, for faster installs)
+- Groq API Key (get from https://console.groq.com)
 ```
 
 ---
 
-### **Step 1: Clone the Repo**
+### **Step 1: Install Dependencies (Auto-Handled)**
+
+The tool uses **UV** for blazing-fast package installation. If UV is not installed, it falls back to pip.
 
 ```bash
-git clone https://github.com/yourusername/quant-devs.git
-cd quant-devs
+# Dependencies auto-install on first run:
+rich, numpy, pandas, scipy, matplotlib, yfinance, groq, seaborn, numba
 ```
 
 ---
 
-### **Step 2: Set API Key**
+### **Step 2: Set Up Environment**
+
+Create a `.env` file in the project directory:
 
 ```bash
-# Create .env file
-echo "GROQ_API_KEY=your-key-here" > .env
+GROQ_API_KEY=your-groq-api-key-here
 ```
+
+Get your free Groq API key from [console.groq.com](https://console.groq.com)
 
 ---
 
-### **Step 3: Run the Tool**
+### **Step 3: Run QuantDevs**
 
 ```bash
 python q-tool.py
 ```
 
-→ **Dependencies auto-install on first run via `uv` or `pip`**
+**That's it.** The interactive menu guides you through:
+1. **Complete Analysis**: Price + Backtest + Visualize + AI
+2. **Greeks Explained**: Educational module
+3. **Exit**
 
 ---
 
@@ -172,103 +219,92 @@ python q-tool.py
 
 <div align="center">
 
-### **Main Menu**
+### **Terminal Interface**
 ```
-╔════════════════════════════════════════════════════════════════════════╗
-║                          QUANT-DEVS                                    ║
-║                 ADVANCED OPTIONS PRICING & RISK ANALYSIS               ║
-╚════════════════════════════════════════════════════════════════════════╝
+╔════════════════════════════════════════════════════════╗
+║           QUANTDEVS - OPTIONS ANALYSIS ENGINE           ║
+║      ADVANCED OPTIONS PRICING & RISK ANALYSIS           ║
+╚════════════════════════════════════════════════════════╝
 
-🏆 MAIN MENU
-┌───┬────────────────────────────────────────────────────────────────────┐
-│ 1 │ 🎯 Complete Analysis (Price | Backtest | Visualize | AI)          │
-│ 2 │ 📚 Greeks Explained                                                │
-│ 3 │ ❌ Exit                                                            │
-└───┴────────────────────────────────────────────────────────────────────┘
-```
+🎯 COMPLETE OPTION ANALYSIS (AMERICAN BINOMIAL)
 
-### **Sample Output**
-```
-NVDA $140.00 CALL - 2026-06-18
-Model: AMERICAN (Binomial) | DTE: 154 days | Spot: $142.35
+📊 Ticker symbol (NVDA): NVDA
+✓ Spot: $187.15 | Div: 0.0200% | Rate: 3.56%
 
-📈 Volatility Analysis
-┌────────────────────────────┬──────────┐
-│ Historical Vol (252d)      │ 42.15%   │
-│ EWMA Forecast (λ=0.94)     │ 38.72%   │
-│ Ensemble (60/40)           │ 40.78%   │
-│ IV Rank (1Y)               │ 68.3%    │
-└────────────────────────────┴──────────┘
+Available Strikes:
+  #  Strike   Implied Vol   IV Rank   Signal
+  10 $185.0   38.9%         25.3%    🟡 WEAK BUY
 
-📊 Signal (IV Rank-Based)
-🟠 WEAK SELL
-
-Mid Volatility Regime (IV Rank 30-70) → Trade on mispricing.
-Model: $8.45 vs Market: $9.20 (+8.9%).
-Strategy: Avoid or short CALL - model shows overvaluation.
-
-💰 Pricing
-┌────────────────────────────┬──────────┐
-│ Fair Value (Model)         │ $8.45    │
-│ Market Price               │ $9.20    │
-│ Abs Difference             │ +$0.75   │
-│ Rel Difference             │ +8.9%    │
-└────────────────────────────┴──────────┘
-
-🔬 Greeks
-┌────────┬──────────┬────────────────────────┐
-│ Delta  │ 0.6234   │ $0.62 per $1 move      │
-│ Gamma  │ 0.0142   │ Delta sensitivity      │
-│ Vega   │ 0.1876   │ $0.19 per 1% vol       │
-│ Theta  │ -0.0234  │ $0.02 daily decay      │
-└────────┴──────────┴────────────────────────┘
+Fair Value: $10.81 | Market: $10.23 | Edge: -5.4%
+Delta: 0.5742 | Gamma: 0.0107 | Vega: 0.23 | Theta: -0.14
 ```
 
-### **Advanced Visualizations**
+### **Visualization Gallery**
 
-| 3D Value Surface | IV Smile | Greeks Multi-Maturity |
-|-----------------|----------|----------------------|
-| ![Surface](placeholder.png) | ![Smile](placeholder.png) | ![Greeks](placeholder.png) |
+| Price Surface | IV Smile | Greeks Evolution |
+|--------------|----------|------------------|
+| ![Surface](docs/surface.png) | ![Smile](docs/smile.png) | ![Greeks](docs/greeks.png) |
+
+### **AI Consultant Output**
+```
+🤖 CONSULTING MEMO
+
+Market Pulse: The NVIDIA $185 CALL is trading at $10.23, below our 
+fair value of $10.81. This presents a buying opportunity.
+
+Delta of 0.57 means you capture 57 paise per rupee move in the stock.
+High Gamma (0.0107) makes this sensitive — like a tightly wound spring.
+
+Vega of 0.23 is the "uncertainty tax" you pay. With IV at 38.9%, the 
+market is pricing in volatility, making this option moderately expensive.
+
+Theta of -0.14 is your daily rent — the option loses 14 paise per day.
+
+MANDATE: BUY the $185 CALL. Hedge with a $180 PUT to create a bull 
+call spread, limiting downside while capturing upside potential.
+```
 
 </div>
 
 ---
 
-## 🔥 **Why QUANT-DEVS Stands Out**
+## 🔥 **Why QuantDevs Stands Out**
 
-| Other Tools | **QUANT-DEVS** |
-|------------|---------------|
-| Black-Scholes only | **American options with early exercise** |
-| Single volatility | **Ensemble vol + RV cone validation** |
-| No signals | **IV Rank-based institutional signals** |
-| Static output | **AI consultant + professional charts** |
-| Slow Python | **Numba JIT compilation (10x faster)** |
-| Generic advice | **Articulate Indian English for local quants** |
+| Old Way | **QuantDevs** |
+|-------|-----------|
+| Manual Excel calculations | **Instant Binomial pricing** |
+| Guesswork volatility | **EWMA + Historical ensemble** |
+| No backtest | **80/20 train-test with Sharpe/Sortino** |
+| Static Greeks | **Dynamic multi-maturity analysis** |
+| No context | **AI explains every trade** |
+| Generic charts | **Institutional 3D surfaces + heatmaps** |
 
 ---
 
 ## 🎯 **Quick Demo Flow**
 
-1. **Launch**: `python q-tool.py`
-2. **Enter ticker**: `NVDA`  
-3. **Auto-fetch**: Spot price, rates, dividends, options chain  
-4. **Select contract**: Interactive menu with liquidity filters  
-5. **Get analysis**:
-   - Fair value vs market price
-   - IV Rank signal (Buy/Sell/Hold)
-   - Greeks with real-world interpretation
-   - Backtest with Sharpe/Sortino/Drawdown
-6. **Generate visuals**: 3D surfaces, IV smile, heatmaps  
-7. **AI memo**: Groq LLaMA generates trade summary  
+1. **Launch**: `python q-tool.py`  
+2. **Select**: "Complete Analysis"  
+3. **Enter**: Ticker (e.g., NVDA)  
+4. **Choose**: Live contract from options chain  
+5. **Get**:
+   - Fair Value vs Market Price
+   - IV Rank-based signal (Buy/Sell/Hold)
+   - Backtest metrics (Sharpe, Drawdown)
+   - 5 professional charts
+   - AI consulting memo
+
+**Total time**: <2 minutes
 
 ---
 
 ## 🛠️ **Project Structure**
 
 ```
-quant-devs/
-├── q-tool.py              # Main application
-├── .env                   # GROQ_API_KEY
+quantdevs/
+├── q-tool.py              # Main engine (all-in-one)
+├── .env                   # Groq API key
+├── README.md             
 ├── visualizations/        # Auto-generated charts
 │   └── NVDA_2026-01-15/
 │       ├── NVDA_price_spot.png
@@ -276,121 +312,82 @@ quant-devs/
 │       ├── NVDA_iv_smile.png
 │       ├── NVDA_greeks_multi.png
 │       └── NVDA_heatmap.png
-├── market_data_binomial.csv  # Historical data export
-├── NVDA_backtest.csv         # Backtest results
-├── Consulting_Memo_Draft.txt # AI-generated memo
-└── README.md
+├── market_data_binomial.csv  # Historical data
+├── NVDA_backtest.csv          # Backtest results
+└── Consulting_Memo_Draft.txt  # AI output
 ```
 
 ---
 
-## 📊 **Key Features Deep Dive**
+## 📚 **Key Concepts**
 
-### **Volatility Modeling**
-- **Historical Vol**: 252-day annualized standard deviation
-- **EWMA**: RiskMetrics λ=0.94 recursive variance
-- **RV Cone**: Statistical validation with [0.5×RV, 3.0×RV] bounds
-- **IV Rank**: Percentile ranking in 1-year realized vol distribution
+### **Greeks Explained (For Beginners)**
 
-### **Binomial Pricing**
-- Cox-Ross-Rubinstein recombining tree
-- Early exercise at every node (American options)
-- Dividend yield adjustment
-- Numba JIT compilation for performance
+- **Delta (Δ)**: Directional exposure. `0.70 delta` = option moves $0.70 per $1 stock move  
+- **Gamma (Γ)**: Delta stability. High gamma = delta changes rapidly  
+- **Vega (ν)**: Volatility sensitivity. Profits from vol spikes  
+- **Theta (Θ)**: Time decay. "Rent" you pay daily  
 
-### **Greeks Calculation**
-- **Delta**: Finite difference with ±1% spot shift
-- **Gamma**: Second derivative via three-point stencil
-- **Vega**: Per 1% volatility change
-- **Theta**: 1-day time decay with boundary handling
+### **IV Rank Strategy**
 
-### **Signal Generation**
-- **Low IV Rank (<30)**: Bias toward buying premium
-- **High IV Rank (>70)**: Bias toward selling premium
-- **Mid IV Rank (30-70)**: Trade on model mispricing
-- **Threshold**: 10% relative difference for strong signals
-
-### **Backtesting**
-- 80/20 train-test split
-- Ensemble volatility calibration on training data
-- Rolling Greeks and P&L tracking
-- Sharpe, Sortino, Max Drawdown metrics
-
-### **AI Consultant**
-- Groq LLaMA 3.3 70B model
-- Custom prompt for institutional style
-- Indian English tone (articulate, professional)
-- Outputs saved to `Consulting_Memo_Draft.txt`
+```
+IV Rank < 30%  → LOW VOL  → Buy options (cheap)
+IV Rank > 70%  → HIGH VOL → Sell options (expensive)
+IV Rank 30-70% → MID VOL  → Trade on model edge
+```
 
 ---
 
 ## 🌱 **Contributing**
 
-We welcome **forks, issues, and PRs**!
+We welcome contributions! Areas to expand:
+
+- Add **European Black-Scholes** model  
+- Implement **Monte Carlo** simulations  
+- Support **multi-leg strategies** (spreads, butterflies)  
+- Add **portfolio Greeks** aggregation  
+- Integrate **real broker APIs** (Interactive Brokers, Zerodha)
 
 ```bash
-git clone https://github.com/yourusername/quant-devs.git
-cd quant-devs
-# Make your improvements
-git commit -m "Add Monte Carlo simulation support"
+git clone https://github.com/yourusername/quantdevs.git
+cd quantdevs
+# Make your magic
+git commit -m "Add Monte Carlo pricer"
 git push
 ```
 
 ---
 
-## 📚 **Learning Resources**
-
-- **Options Theory**: Hull's *Options, Futures, and Other Derivatives*
-- **Volatility Modeling**: Gatheral's *The Volatility Surface*
-- **Python Quant**: Hilpisch's *Python for Finance*
-- **Binomial Trees**: Cox, Ross, Rubinstein (1979) original paper
-
----
-
-## 🔮 **Roadmap**
-
-- [ ] Monte Carlo pricing for exotic options
-- [ ] Implied volatility surface interpolation
-- [ ] Portfolio-level Greeks aggregation
-- [ ] Multi-leg strategy builder (spreads, straddles)
-- [ ] Real-time streaming data support
-- [ ] Web dashboard (Flask/Streamlit)
-- [ ] Machine learning vol forecasting
-
----
-
-## 🐛 **Known Issues**
-
-- IV smile visualization requires liquid options (volume > 10, OI > 100)
-- Custom expiry dates may not have market data (falls back to manual mode)
-- Risk-free rate fetching occasionally times out (uses default 4.35%)
-
----
-
 ## 📄 **License**
 
-[MIT License](LICENSE) — Free to use, modify, and ship.
+[MIT License](LICENSE) — Free for personal and commercial use.
 
 ---
 
 ## 🙏 **Acknowledgments**
 
-- **yfinance**: Market data API
-- **Groq**: Lightning-fast LLaMA inference
-- **Rich**: Beautiful terminal UI
-- **Numba**: JIT compilation for performance
+- **Yahoo Finance**: Real-time market data  
+- **Groq**: LLaMA-3.3-70B AI inference  
+- **Numba**: JIT compilation for fast Binomial pricing  
+- **Rich**: Beautiful terminal UI  
+
+---
+
+## 📞 **Support**
+
+- **Issues**: [GitHub Issues](https://github.com/yourusername/quantdevs/issues)  
+- **Discussions**: [GitHub Discussions](https://github.com/yourusername/quantdevs/discussions)  
+- **Email**: your.email@example.com
 
 ---
 
 <div align="center">
 
-### **QUANT-DEVS doesn't just price options.**  
-### **It thinks like a quant desk.**
+### **QuantDevs doesn't just price options.**  
+### **It empowers traders.**
 
-**Built with precision • Runs with speed • Thinks with AI**
+**Built with precision • Powered by AI • Trusted by quants**
 
----
-
-*Made for traders who code, and coders who trade.*
+⭐ **Star this repo** if you found it useful!
 
 </div>

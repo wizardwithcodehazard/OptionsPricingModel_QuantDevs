@@ -1,0 +1,7 @@
+Market Pulse: The NVIDIA (NVDA) $185 CALL option is currently trading at $10.23, slightly below our model's fair value of $10.81. This presents an interesting opportunity for our fund.
+
+Let's delve into the Greeks to better understand the dynamics at play. Delta, at 0.5742, indicates that for every dollar move in the underlying stock, our option value will change by approximately 57 paise. Gamma, at 0.010748, is relatively high, which means our Delta will change rapidly as the stock price moves. This is akin to driving a car with a sensitive accelerator - a small movement can lead to a large change in speed, making it treacherous to navigate.
+
+Vega, at 0.23, represents the uncertainty tax we pay for owning this option. With an Implied Volatility (IV) of 38.93%, the market is pricing in significant uncertainty, making our option more expensive. Theta, at -0.1393, is the daily rent we pay for holding this option, which will erode its value over time.
+
+Considering these factors, I recommend a 'Buy' mandate for the NVDA $185 CALL option, as it is undervalued compared to our model. To mitigate the risks associated with high Gamma, I suggest hedging by buying a $180 PUT option to create a bull call spread. This will help limit our potential losses while still allowing us to capitalize on the upside. By taking this position, we can potentially generate returns while managing our risk exposure.
