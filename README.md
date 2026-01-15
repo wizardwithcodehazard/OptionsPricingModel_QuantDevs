@@ -3,12 +3,13 @@
 # 📈 **QuantDevs**  
 
 ### *Professional Options Pricing & Risk Analysis Engine*
-<img width="1024" height="200" alt="QuantDevs Banner" src="https://github.com/user-attachments/assets/quant-banner-placeholder.png" />
+<img width="995" height="400" alt="image" src="https://github.com/user-attachments/assets/76fb1c46-8226-4827-9052-c38f73715836" />
+
 
 > **Transform options analysis into institutional-grade insights — instantly.**  
 > **Binomial American Pricing • Real-Time Data • AI Consulting • Professional Visualizations**
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/quantdevs?style=social)](https://github.com/yourusername/quantdevs/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/wizardwithcodehazard/OptionsPricingModel_QuantDevs?style=social)](https://github.com/yourusername/quantdevs/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)
 ![Groq](https://img.shields.io/badge/AI-Groq_API-orange?logo=ai&logoColor=white)
@@ -251,7 +252,8 @@ Delta: 0.5742 | Gamma: 0.0107 | Vega: 0.23 | Theta: -0.14
 
 | Price Surface | IV Smile | Greeks Evolution |
 |--------------|----------|------------------|
-| ![Surface](docs/surface.png) | ![Smile](docs/smile.png) | ![Greeks](docs/greeks.png) |
+| <img width="3600" height="2400" alt="Price Surface" src="https://github.com/user-attachments/assets/84e2b455-415d-4c27-975f-9afe75e88a72" /> | <img width="3653" height="2056" alt="IV Smile" src="https://github.com/user-attachments/assets/f44bd54b-4be5-487a-a063-f523879ef9ff" /> | <img width="4500" height="3600" alt="Greeks Evolution" src="https://github.com/user-attachments/assets/708698d8-7039-45af-9da6-130f5abda20c" /> |
+
 
 ### **AI Consultant Output**
 ```
