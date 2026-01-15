@@ -221,10 +221,18 @@ python q-tool.py
 
 ### **Terminal Interface**
 ```
-╔════════════════════════════════════════════════════════╗
-║           QUANTDEVS - OPTIONS ANALYSIS ENGINE           ║
-║      ADVANCED OPTIONS PRICING & RISK ANALYSIS           ║
-╚════════════════════════════════════════════════════════╝
+╔════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                    ║
+║  ███████╗██╗   ██╗ █████╗ ███╗   ██╗████████╗ ██████╗ ███████╗██╗   ██╗███████╗    ║
+║  ██╔═══██║██║   ██║██╔══██╗████╗  ██║╚══██╔══╝ ██╔══██╗██╔════╝██║   ██║██╔════╝   ║
+║  ██║   ██║██║   ██║███████║██╔██╗ ██║   ██║    ██║  ██║█████╗  ██║   ██║███████╗   ║
+║  ██║▄▄ ██║██║   ██║██╔══██║██║╚██╗██║   ██║    ██║  ██║██╔══╝  ╚██╗ ██╔╝╚════██║   ║
+║  ╚██████╔╝╚██████╔╝██║  ██║██║ ╚████║   ██║    ██████╔╝███████╗ ╚████╔╝ ███████║   ║
+║   ╚══▀▀═╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝    ╚═════╝ ╚══════╝  ╚═══╝  ╚══════╝   ║
+║                                                                                    ║
+║                  ADVANCED OPTIONS PRICING & RISK ANALYSIS                          ║
+║                            American (Binomial)                                     ║
+╚════════════════════════════════════════════════════════════════════════════════════╝
 
 🎯 COMPLETE OPTION ANALYSIS (AMERICAN BINOMIAL)
 
@@ -349,8 +357,8 @@ We welcome contributions! Areas to expand:
 - Integrate **real broker APIs** (Interactive Brokers, Zerodha)
 
 ```bash
-git clone https://github.com/yourusername/quantdevs.git
-cd quantdevs
+git clone https://github.com/wizardwithcodehazard/OptionsPricingModel_QuantDevs.git
+cd OptionsPricingModel_QuantDevs
 # Make your magic
 git commit -m "Add Monte Carlo pricer"
 git push
@@ -375,9 +383,8 @@ git push
 
 ## 📞 **Support**
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/quantdevs/issues)  
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/quantdevs/discussions)  
-- **Email**: your.email@example.com
+- **Issues**: [GitHub Issues](https://github.com/wizardwithcodehazard/OptionsPricingModel_QuantDevs/issues)  
+- **Discussions**: [GitHub Discussions](https://github.com/wizardwithcodehazard/OptionsPricingModel_QuantDevs/discussions)  
 
 ---
 
