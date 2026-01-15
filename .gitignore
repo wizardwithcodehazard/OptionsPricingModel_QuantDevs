@@ -9,4 +9,5 @@ visualizations/
 *_backtest.csv
 *.png
 *.txt
+*.csv
 '@ | Out-File -FilePath .gitignore -Encoding utf8
