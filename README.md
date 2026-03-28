@@ -363,7 +363,7 @@ We welcome contributions! Areas to expand:
 - Integrate **real broker APIs** (Interactive Brokers, Zerodha)
 
 ```bash
-git clone https://github.com/wizardwithcodehazard/OptionsPricingModel_QuantDevs.git
+git clone https://github.com/Vedant180205/Octoverse_qtool.git
 cd OptionsPricingModel_QuantDevs
 # Make your magic
 git commit -m "Add Monte Carlo pricer"
@@ -389,8 +389,8 @@ git push
 
 ## 📞 **Support**
 
-- **Issues**: [GitHub Issues](https://github.com/wizardwithcodehazard/OptionsPricingModel_QuantDevs/issues)  
-- **Discussions**: [GitHub Discussions](https://github.com/wizardwithcodehazard/OptionsPricingModel_QuantDevs/discussions)  
+- **Issues**: [GitHub Issues](https://github.com/Vedant180205/Octoverse_qtool.git/issues)  
+- **Discussions**: [GitHub Discussions](https://github.com/Vedant180205/Octoverse_qtool.git/discussions)  
 
 ---
 
